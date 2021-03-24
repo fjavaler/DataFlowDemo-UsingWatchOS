@@ -12,7 +12,8 @@ struct DataFlowDemoUsingWatchOSApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                let episode = Episode(title: "Amatriciana", showTitle: "Caffé Macs Radio")
+                ContentView(episode: episode)
             }
         }
 

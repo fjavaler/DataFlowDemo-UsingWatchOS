@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8182A9B260B86D60033CBAD /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8182A9A260B86D60033CBAD /* PlayButton.swift */; };
 		F8A42A0E260B8275004E8B2F /* DataFlowDemoUsingWatchOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F8A42A0D260B8275004E8B2F /* DataFlowDemoUsingWatchOS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F8A42A13260B8278004E8B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A42A12260B8278004E8B2F /* Assets.xcassets */; };
 		F8A42A1A260B8278004E8B2F /* DataFlowDemoUsingWatchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F8A42A19260B8278004E8B2F /* DataFlowDemoUsingWatchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -17,6 +18,7 @@
 		F8A42A27260B8278004E8B2F /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A42A26260B8278004E8B2F /* ComplicationController.swift */; };
 		F8A42A29260B8279004E8B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A42A28260B8279004E8B2F /* Assets.xcassets */; };
 		F8A42A2C260B8279004E8B2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A42A2B260B8279004E8B2F /* Preview Assets.xcassets */; };
+		F8A42A46260B83C9004E8B2F /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A42A45260B83C9004E8B2F /* Episode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F8182A9A260B86D60033CBAD /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		F8A42A09260B8275004E8B2F /* DataFlowDemoUsingWatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataFlowDemoUsingWatchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A42A0D260B8275004E8B2F /* DataFlowDemoUsingWatchOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DataFlowDemoUsingWatchOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A42A12260B8278004E8B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 		F8A42A2B260B8279004E8B2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F8A42A2D260B8279004E8B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8A42A2E260B8279004E8B2F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F8A42A45260B83C9004E8B2F /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				F8A42A1E260B8278004E8B2F /* DataFlowDemoUsingWatchOSApp.swift */,
-				F8A42A20260B8278004E8B2F /* ContentView.swift */,
+				F8A42A41260B8379004E8B2F /* ViewModels */,
+				F8A42A40260B8373004E8B2F /* Views */,
+				F8A42A3F260B836B004E8B2F /* Models */,
 				F8A42A22260B8278004E8B2F /* NotificationController.swift */,
-				F8A42A24260B8278004E8B2F /* NotificationView.swift */,
 				F8A42A26260B8278004E8B2F /* ComplicationController.swift */,
 				F8A42A28260B8279004E8B2F /* Assets.xcassets */,
 				F8A42A2D260B8279004E8B2F /* Info.plist */,
@@ -139,6 +144,31 @@
 				F8A42A2B260B8279004E8B2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8A42A3F260B836B004E8B2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F8A42A45260B83C9004E8B2F /* Episode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F8A42A40260B8373004E8B2F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F8A42A20260B8278004E8B2F /* ContentView.swift */,
+				F8A42A24260B8278004E8B2F /* NotificationView.swift */,
+				F8182A9A260B86D60033CBAD /* PlayButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F8A42A41260B8379004E8B2F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8A42A23260B8278004E8B2F /* NotificationController.swift in Sources */,
+				F8182A9B260B86D60033CBAD /* PlayButton.swift in Sources */,
+				F8A42A46260B83C9004E8B2F /* Episode.swift in Sources */,
 				F8A42A21260B8278004E8B2F /* ContentView.swift in Sources */,
 				F8A42A27260B8278004E8B2F /* ComplicationController.swift in Sources */,
 				F8A42A1F260B8278004E8B2F /* DataFlowDemoUsingWatchOSApp.swift in Sources */,
